@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/user/updatePsw" method="post">
+    <input type="hidden" name="name" th:value="${name}"/><br/>
+    请输入密码:<input  name="password" /><br/>
+    请确认密码:<input  name="code" /><br/>
+    <input type="submit" value="重置密码"/>
+</form>
+</body>
+</html>

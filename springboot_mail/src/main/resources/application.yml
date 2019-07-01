@@ -1,0 +1,27 @@
+
+
+
+spring:
+  mail:
+    #配置发送方协议
+    protocol: smtp
+    #配置smtp服务器地址
+    host: smtp.sina.com
+    #发送方的邮箱
+    username: yzh960813@sina.com
+    #发送方的密码
+    password: yzh123456
+    properties:
+      mail.smtp.socketFactory.fallback: true
+      mail.smtp.starttls.enable: true
+
+dubbo:
+  application:
+    name: mail_service
+  registry:
+    address: zookeeper://47.106.134.229:2181
+  protocol:
+    port: -1
+  consumer:
+    check: false
+
